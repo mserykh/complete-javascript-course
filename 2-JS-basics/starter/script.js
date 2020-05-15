@@ -332,7 +332,7 @@ else {
 /****************************************
 * Functions
 */
-
+/*
 function calculateAge(birthYear) {
     return 2020 - birthYear;
 } 
@@ -357,3 +357,32 @@ function yearsUntilRetirement(year, firstName) {
 yearsUntilRetirement(1987, 'Marie');
 yearsUntilRetirement(1986, 'Vlad');
 yearsUntilRetirement(1925, 'Rusty');
+*/
+/****************************************
+* Functions Statements and Expressions
+*/
+
+// Function Declaration
+//function whatDoYouDo(job, firstName) {}
+
+//Function Expression
+const whatDoYouDo = function(job, firstName) {
+    let text;
+    job = prompt('What do you do?', '');
+    firstName = prompt('What is your name', '');
+    switch(job) {
+        case 'teacher':
+            text = firstName + ' teaches kids how to code.';
+        case 'driver': 
+            text = firstName + ' drives a can in Lisbon';
+        case 'designer':
+            text = firstName + ' designs beautiful wevsites.';
+        default: 
+            text = firstName + ' does something else.' ;
+    }
+    document.getElementById("whatDoYouDo").innerHTML = text;
+}
+
+
+
+
