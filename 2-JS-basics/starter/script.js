@@ -393,7 +393,7 @@ const whatDoYouDo = function(job, firstName) {
 * Arrays
 */
 
-
+/*
 // Initialize new array
 var names = ['John', 'Mark', 'Jane'];
 var years = new Array(1990, 1969, 1948);
@@ -426,3 +426,59 @@ console.log(john.indexOf(23));  //indexOf returns the position, to check if the 
 var isDesigner = john.indexOf('designer') === -1 ?
 'John is NOT a designer' : 'John Is a designer';
 console.log(isDesigner);
+*/
+
+/****************************************
+* Challenge
+*/
+const bills = [124, 48, 268];
+
+function tipCalculator(sums) {
+    let tips = [];
+    let totals =[];
+    for (let i = 0; i < sums.length; i++) {
+        if (sums[i] < 50) {
+            tips.push(sums[i] * .2);
+        } else
+        if (sums[i] >=50 && sums[i] <200) {
+            tips.push(sums[i] * .15);
+        } else {
+            tips.push(sums[i] * .1);
+        }
+        totals.push(sums[i] + tips[i]);
+    }
+        return {tips, totals}; 
+        
+}
+
+
+console.log(tipCalculator(bills));
+
+
+function tipCalc(bill) {
+    let percentage;
+    if (bill < 50) {
+        percentage = .2;
+    } else if (bill >= 50 && bill < 200) {
+        percentage = .15;
+    } else {
+        percentage = .1;
+    }
+    return tip = percentage * bill;
+}
+
+const bills2 = [124, 48, 268];
+let tips2 = [];
+for (let i =0; i < bills.length; i++) {
+    tips2.push(tipCalc(bills2[i]));
+}
+
+console.log(tips2);
+
+let finalValues = [];
+
+for (let i =0; i < bills.length; i++) {
+    finalValues.push(bills2[i] + tips2[i]);
+}
+
+console.log(finalValues);
