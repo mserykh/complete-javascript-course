@@ -373,16 +373,16 @@ const whatDoYouDo = function(job, firstName) {
     switch(job) {
         case 'teacher':
             text = firstName + ' teaches kids how to code.';
+            break;
         case 'driver': 
             text = firstName + ' drives a can in Lisbon';
+            break;
         case 'designer':
-            text = firstName + ' designs beautiful wevsites.';
+            text = firstName + ' designs beautiful websites.';
+            break;
         default: 
             text = firstName + ' does something else.' ;
+            break;
     }
     document.getElementById("whatDoYouDo").innerHTML = text;
-}
-
-
-
-
+};
