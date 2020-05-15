@@ -366,6 +366,7 @@ yearsUntilRetirement(1925, 'Rusty');
 //function whatDoYouDo(job, firstName) {}
 
 //Function Expression
+/* 
 const whatDoYouDo = function(job, firstName) {
     let text;
     job = prompt('What do you do?', '');
@@ -386,3 +387,42 @@ const whatDoYouDo = function(job, firstName) {
     }
     document.getElementById("whatDoYouDo").innerHTML = text;
 };
+*/
+
+/****************************************
+* Arrays
+*/
+
+
+// Initialize new array
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[1]);
+console.log(names);
+console.log(names.length);
+
+
+// Mutate array data
+names[1] = 'Ben';
+names[5] = 'Mary';
+names[names.length] = 'Vlad';
+console.log(names);
+
+//Different data types
+var john = ['John', 'Smith', 1990, 'designer', false];
+john.push('blue');
+john.unshift('Mr.');
+
+console.log(john);
+
+john.pop();
+john.pop();
+john.shift();
+console.log(john);
+
+console.log(john.indexOf(23));  //indexOf returns the position, to check if the element is in the array, if not it will return -1
+
+var isDesigner = john.indexOf('designer') === -1 ?
+'John is NOT a designer' : 'John Is a designer';
+console.log(isDesigner);
