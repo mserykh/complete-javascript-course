@@ -431,6 +431,7 @@ console.log(isDesigner);
 /****************************************
 * Challenge
 */
+/*
 const bills = [124, 48, 268];
 
 function tipCalculator(sums) {
@@ -482,3 +483,37 @@ for (let i =0; i < bills.length; i++) {
 }
 
 console.log(finalValues);
+*/
+
+/****************************************
+* Object and properties
+*/
+
+// Object literal
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.family);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+
+console.log(john);
+
+
+// new Object syntax
+var jane = new Object();
+jane.name = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
