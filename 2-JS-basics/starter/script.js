@@ -522,7 +522,7 @@ console.log(jane);
 /****************************************
 * Objects and Methods
 */
-
+/*
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -540,5 +540,44 @@ console.log(john.calcAge(1990));
 john.calcAge();
 console.log(john);
 
+*/
+
+/****************************************
+* Objects and challenge
+*/
+
+var john = {
+    fullName: 'John Smith',
+    mass: 80,
+    height: 1.5,
+    calcBmi: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
 
 
+var mark = {
+    fullName: 'Mark Rondo',
+    mass: 150,
+    height: 1.5,
+    calcBmi: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+
+//var highestBmi = function() {
+    if (john.calcBmi() > 
+    mark.calcBmi()) {
+        console.log(john.fullName + ' has the highest BMI');
+    } else if (mark.bmi > john.bmi) {
+        console.log(mark.fullName + ' has the highest BMI');
+    } else {
+        console.log(mark.fullName + ' and ' + john.fullName + ' have identical BMI');
+       
+    }
+//};
+
+//highestBmi();
