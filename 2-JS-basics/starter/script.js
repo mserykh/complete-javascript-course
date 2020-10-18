@@ -584,21 +584,22 @@ var mark = {
 //highestBmi();
 */
 
+
 /****************************************
 * Loops and Iteration
 */
+/*
 
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
-
 // i = 0, 0 < 10 true, log i to console, i++...
 // i = 10, 10 < 10 false, exit the loop
 
 for (var i = 0; i < 10; i+=2) {
     console.log(i);
 }
-/*
+
 var john = ['John', 'Smith', 1990, 'designer', false];
 
 for (i = 0; i < john.length; i++) {
@@ -610,7 +611,7 @@ while (i < john.length) {
     console.log(john[i]);
     i++;
 }
-*/
+
 // continue and break statements
 
 var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
@@ -631,4 +632,16 @@ for (i = 0; i < john.length; i++) {
 var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
 for (i = john.length - 1; i >= 0; i--) {
     console.log(john[i]);
+}
+
+*/
+
+/****************************************
+* Challenge 5
+*/
+
+var calc  = {
+    bills: [124, 48, 268, 180, 42],
+    tips : [],
+    totals: []
 }
